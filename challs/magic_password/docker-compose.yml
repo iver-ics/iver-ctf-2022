@@ -1,7 +1,0 @@
-version: "3"
-
-services:
-  chall:
-    build: .
-    ports:
-      - 22074:80

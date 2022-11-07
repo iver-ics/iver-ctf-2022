@@ -1,2 +1,0 @@
-User-agent: *
-Disallow: /cool_project.html
