@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Jason",
+        "location": "spooky{Bl1nd_n0Sql_inj3ction5In2o22}"
+    },
+    {
+        "name": "Freddy",
+        "location": "Bahamas"
+    },
+    {
+        "name": "Hannibal",
+        "location": "Tokyo, Japan"
+    },
+    {
+        "name": "Batman",
+        "location": "Bat Cave"
+    },
+    {
+        "name": "Jack The Ripper",
+        "location": "London, England"
+    },
+    {
+        "name": "Annabelle",
+        "location": "Toy Closet"
+    },
+    {
+        "name": "Frankenstein's Monster",
+        "location": "Probably a couple of places"
+    },
+    {
+        "name": "Dracula",
+        "location": "Transylvania"
+    },
+    {
+        "name": "Michael Myers",
+        "location": "Solna"
+    }
+]

@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  chall:
+    build: .
+    command: npm start
+    environment:
+      PORT: 22081
+      DOMAIN: spooktoberctf.se
+      FLAG: spooky{W3lL_jWk5_I5_h4rD...}
+      NODE_ENV: production
+    ports:
+        - 22081:22081

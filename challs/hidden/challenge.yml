@@ -1,0 +1,20 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "WARMUP: Hidden Present"
+author: "Björn Österman"
+category: misc
+description: "Warmup: Same as last year but with different flag
+You can find the solution at https://github.com/iver-ics/iver-ctf-2021/tree/master/challs/hidden"
+value: 10
+type: standard
+
+connection_info: nc spooktoberctf.se 22073
+
+flags:
+    - spooky{hidden_flags_dont_show}
+
+tags:
+    - warmup
+    - misc

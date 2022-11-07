@@ -1,0 +1,23 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Death by printer"
+author: "Robert Teir"
+category: OSINT
+description: The sysadmin Bob has just died in a horrible printer accident. Or was it an accident? When you go to pack up his computer you notice a file called secrets.kdbx, strange you think…? On Bobs monitor the webpage of Iver.com is open. You don’t have the password for the file, what could it be?
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 15
+    minimum: 100
+
+flags:
+    - spooky{The_printers_ar3_alive}
+
+files:
+    - src/secrets.kdbx
+
+tags:
+    - OSINT

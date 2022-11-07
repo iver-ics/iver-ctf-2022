@@ -1,0 +1,13 @@
+FROM debian:latest as build-stage
+
+RUN apt-get update && \
+  apt-get install -y dosfstools coreutils util-linux fdisk bash
+
+FROM build-stage
+
+WORKDIR /root
+
+COPY ./src/build.sh /root/build.sh
+
+CMD /root/build.sh
+

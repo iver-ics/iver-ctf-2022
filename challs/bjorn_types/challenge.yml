@@ -1,0 +1,21 @@
+name: "Wizard Hat 1"
+author: "Björn Österman"
+category: pwn
+description: "Can't afford that flag? Buy some hats!"
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 15
+    minimum: 100
+
+connection_info: nc spooktoberctf.se 22072
+
+flags:
+    - spooky{less_hats_means_more_flags}
+
+files:
+    - src/program.c
+
+tags:
+    - pwn

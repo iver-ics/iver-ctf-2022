@@ -1,0 +1,26 @@
+name: "WARMUP: Return to Santa"
+author: "Björn Österman"
+category: pwn
+description: "Warmup: Same as last year but with new flag.
+The solution can be found at: https://github.com/iver-ics/iver-ctf-2021/tree/master/challs/ret2santa
+"
+ 
+connection_info: nc spooktoberctf.se 22075
+
+value: 10
+type: standard
+
+flags:
+  - spooky{HuH_Santa_NOoW}
+files:
+  - src/ret2santa.c
+  - src/ret2santa
+
+tags:
+  - pwn
+
+hints:
+    - What is the address of win()
+
+state: visible
+version: "0.1"

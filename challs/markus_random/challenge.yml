@@ -1,0 +1,25 @@
+name: "SecureStorage"
+author: "Markus Jonsson"
+category: rev
+description: "Encryption is easy! Just XOR with random it's the perfect way of encryption!"
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 15
+    minimum: 100
+
+flags:
+    - spooky{your_random_number_is_4}
+
+tags:
+    - rev
+
+files:
+    - src/secureStorage.c
+    - src/secureStorage
+    - src/flag.txt.enc
+
+hints:
+    - https://xkcd.com/221/

@@ -1,0 +1,19 @@
+name: "Rolling Xors"
+author: "Björn Österman"
+category: rev
+description: "Just give the program the correct flag ;-)"
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 15
+    minimum: 100
+
+files:
+    - bin/program
+
+flags:
+    - spooky{binary_like_a_washing_machine}
+
+tags:
+    - rev

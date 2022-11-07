@@ -1,0 +1,25 @@
+name: nulldev
+author: Christopher Janzon
+category: pwn
+description: I've found the void. Let's shout our secrets into it!
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 15
+    minimum: 100
+
+connection_info: nc spooktoberctf.se 22001
+
+flags:
+    - spooky{f1l3_d35cr1p70r5_w7f}
+
+tags:
+    - pwn
+
+files:
+    - src/nulldev.c
+    - bin/nulldev
+
+hints:
+    - Wait, what file descriptor does stdout have?

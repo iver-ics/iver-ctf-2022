@@ -1,0 +1,27 @@
+version: "0.1"
+name: "Pseudonym"
+requirements:
+    - "Where's Jason?"
+author: "Pontus Norrström"
+category: OSINT
+description: |-
+    Great job finding the town he's located in! We are now closer than ever to catching him. But it seems he went on the run.
+
+    We managed to find out the house is registered to the pseudonym "Jason Gammelgren". Could you see if you can find any information about him?
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 15
+    minimum: 100
+hints:
+    - {
+        content: "We do know he used to be able to communicate with all his fans..",
+        cost: 100
+    }
+flags:
+    - spooky{Sh3rl0ck_1s_a_gR8_t00l!}
+
+tags:
+    - osint

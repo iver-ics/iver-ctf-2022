@@ -1,0 +1,25 @@
+version: "0.1"
+
+name: "CandyVault"
+author: "Pontus Norrström"
+category: web
+description: "I have managed to store all my halloween candy inside a locked vault. But I seem to have accidentally banned all my own passwords... Maybe you can hack my secure password storage solution? I've provided the extension.."
+
+
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 15
+    minimum: 100
+
+connection_info: http://spooktoberctf.se:22082
+
+files:
+    - keyvault.so
+flags:
+    - spooky{Nu11_t3Rm1N4t0rS_aR3_fun!}
+
+tags:
+    - web

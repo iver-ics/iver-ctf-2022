@@ -1,0 +1,11 @@
+# Challenge specific files
+README.md
+challenge.yml
+
+# Docker files
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Build files
+.gitignore

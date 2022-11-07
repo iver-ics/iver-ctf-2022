@@ -1,0 +1,22 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "The Real Needle"
+author: "Björn Österman"
+category: misc
+description: "There is a needle in that BIG pool of blood"
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 15
+    minimum: 100
+
+connection_info: nc spooktoberctf.se 22078
+
+flags:
+    - spooky{stil1_caNt_hide_frOm_you}
+
+tags:
+    - misc

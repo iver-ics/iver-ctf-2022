@@ -1,0 +1,25 @@
+version: "0.1"
+name: "Where's Jason?"
+author: "Pontus Norrström"
+category: OSINT
+description: |-
+    We're still looking for him. But we've recently recieved intel that he might be at one of his houses.
+    Could you help us figure out where it is? We need the name of the town.
+    Format: spooky{Nacka}
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 15
+    minimum: 100
+
+flags:
+    - spooky{forsbacka}
+    - spooky{Forsbacka}
+
+files:
+    - src/jasons_house.jpg
+
+tags:
+    - osint

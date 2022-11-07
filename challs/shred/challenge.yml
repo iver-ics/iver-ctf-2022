@@ -1,0 +1,25 @@
+name: "shred"
+author: "Christopher Janzon"
+category: forensics
+description: Some trick or treaters pulled a trick on us and stole a flag. We've made a copy of the USB-drive they used during the attack; but can't seem to find anything. Can you find a flag on it?
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 15
+  minimum: 100
+
+flags:
+  - spooky{5hr3d_y0ur_d474}
+
+tags:
+  - forensics
+
+files:
+  - out/usb-backup.img
+
+hints:
+  - The name of this challenge is what the trick or treaters should've done
+  - content: The flag is _not_ in `vacation.jpg` or `Recept kycklingpasta.pdf`.
+    cost: 50

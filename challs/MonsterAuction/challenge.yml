@@ -1,0 +1,19 @@
+version: "0.1"
+
+name: "Monster Auction"
+author: "Pontus Norrström"
+category: web
+description: "The yearly monter auction is coming around. And we have been tracking Jason for quite some time. Can you figure out where he is? I heard the Monster Auction stores locations of their clients as well.."
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 15
+    minimum: 100
+
+connection_info: http://spooktoberctf.se:22083
+flags:
+    - spooky{Bl1nd_n0Sql_inj3ction5In2o22}
+tags:
+    - web

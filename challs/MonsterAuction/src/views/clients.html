@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Monster Auction</title>
+        <link rel="stylesheet" href="./css/css.css">
+    </head>
+    <body>
+        <div id="app">
+            <a href="/"><h1 id="header">₥Ø₦₴₮ɆⱤ ₳Ʉ₵₮łØ₦</h1></a>
+            <a href="/"><img id="logo" src="./img/MonsterAuction.png"></a>
+            <br />
+            <br />
+            <div id="intro">
+                <p>
+                    Here's a list of our clients:
+                    <input id="searchText"></input>
+                    <button onclick="searchClients()">Search</button>
+                </p>
+                <ul id="list">
+                    <li>List</li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            var textEl = document.getElementById("searchText");
+            textEl.value = "";
+            searchClients();
+            function updateResults(clients) {
+                var out = "";
+                for (var idx in clients) {
+                    console.log(clients[idx]);
+                    out += `<li>${clients[idx].name}</li>`;
+                }
+                document.getElementById("list").innerHTML = out;
+            }
+            function searchClients() {
+                fetch('/clients', {
+                    method:"POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    body: textEl.value == '' ? null : "name="+textEl.value
+                })
+                    .then(x => x.text())
+                    .then(clients => {
+                        console.log(clients);
+                        updateResults(JSON.parse(clients));
+                    }).catch(err => {
+                        document.getElementById("list").innerHTML = "search failed :(";
+
+                    })
+                textEl.value = "";
+            }
+        </script>
+    </body>
+</html>

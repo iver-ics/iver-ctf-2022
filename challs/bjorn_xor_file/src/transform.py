@@ -1,0 +1,1 @@
+open('chall.bin','wb').write(bytes([x^170 for x in open('file','rb').read()]))

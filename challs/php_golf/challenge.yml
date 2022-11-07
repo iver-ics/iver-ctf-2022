@@ -1,0 +1,20 @@
+version: "0.1"
+name: "Calculator"
+author: "Pontus Norrström"
+category: web
+description: "We've created a calculator so that you can count your halloween candy efficiently! No.. Not really.. We just wanted a golf challenge.."
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 15
+    minimum: 100
+
+connection_info: http://spooktoberctf.se:22085
+
+flags:
+    - spooky{Why_1s_PHP_l1ke_th1s...}
+
+tags:
+    - web

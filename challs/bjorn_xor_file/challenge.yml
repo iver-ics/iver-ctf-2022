@@ -1,0 +1,19 @@
+name: "Bloody Xor"
+author: "Björn Österman"
+category: stego
+description: "Is there a flag in there somewhere?"
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 15
+    minimum: 100
+
+flags:
+    - spooky{that_wasnt_so_bloody_hard}
+
+files:
+    - bin/chall.bin
+
+tags:
+    - stego

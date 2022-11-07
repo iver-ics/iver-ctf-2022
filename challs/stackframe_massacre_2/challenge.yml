@@ -1,0 +1,27 @@
+name: stackframe_massacre_2
+author: Christopher Janzon
+category: pwn
+description: The sequel! Cut it up and _assemble_ back together ;)
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 15
+  minimum: 100
+
+connection_info: nc spooktoberctf.se 22062
+
+flags:
+  - spooky{0m6_u_5p34k_m4ch1n3}
+
+tags:
+  - pwn
+
+files:
+  - src/stackframe_massacre_2.c
+  - bin/stackframe_massacre_2
+
+hints:
+  - This is a continuation of stackframe_massacre. Much of the solution can be re-used
+  - I wonder where flag is in the stack relative to stuff
+  - "`mov eax,4` is sys_write, right?"

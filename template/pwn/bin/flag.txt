@@ -1,0 +1,1 @@
+spooky{no_stack_secrets_from_printf}

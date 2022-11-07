@@ -1,0 +1,18 @@
+version: "3"
+services:
+  mongo:
+    image: mongo
+    restart: always
+    volumes:
+      - .:/code
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: spooktober
+      MONGO_INITDB_ROOT_PASSWORD: S3CureP4ssw0000rd
+    ports:
+        - 127.0.0.1:27017:27017
+  chall:
+    build: .
+    command: |
+        npm start --prefix src
+    ports:
+        - 22083:3000

@@ -1,0 +1,22 @@
+version: "0.1"
+
+name: "Secure Token"
+author: "Pontus Norrström"
+category: web
+description: "I've tried implementing JWKS! Sounds really useful.. Hopefully it's secure though."
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 15
+    minimum: 100
+
+files:
+    - src/index.js
+
+connection_info: http://spooktoberctf.se:22081
+flags:
+    - spooky{W3lL_jWk5_I5_h4rD...}
+tags:
+    - web

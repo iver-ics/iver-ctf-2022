@@ -1,0 +1,22 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Needle"
+author: "Björn Österman"
+category: misc
+description: "There is a needle in that pool of blood"
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 15
+    minimum: 100
+
+connection_info: nc spooktoberctf.se 22071
+
+flags:
+    - spooky{caNt_hIde_fr0m_Sha_you}
+
+tags:
+    - misc

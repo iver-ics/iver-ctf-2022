@@ -1,0 +1,27 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Movie killer"
+author: "Robert Teir"
+category: forensics
+description: Our copycat movie killer has been using a shared computer to research cool movie quotes. We have an image of the computer; can you find out what his favorite quote is?
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 15
+    minimum: 100
+
+flags:
+    - spoktober{We_all_go_a_l1ttle_mad_s0metimes}
+    - spooky{We_all_go_a_l1ttle_mad_s0metimes}
+
+files:
+    - src/profile.zip
+
+tags:
+    - forensics
+
+Hints:
+  - Our movie killer really enjoys Rosemary's Baby, Dracula prince of darkness and Psycho

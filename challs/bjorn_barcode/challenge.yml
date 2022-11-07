@@ -1,0 +1,19 @@
+name: "Behind Bars"
+author: "Björn Österman"
+category: misc
+description: "This challenge is too inverted for me!"
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 15
+    minimum: 100
+
+flags:
+    - spooky{no_fooling_you}
+
+files:
+    - src/chall.png
+
+tags:
+    - misc

@@ -1,0 +1,26 @@
+name: stackframe_massacre
+author: Christopher Janzon
+category: pwn
+description: haha my code barely does anything. there's no way it can be exploited then, right? right?? please, don't hurt my stack
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 15
+  minimum: 100
+
+connection_info: nc spooktoberctf.se 22067
+
+flags:
+  - spooky{pumpk1n_5p1c3_l4773}
+
+tags:
+  - pwn
+
+files:
+  - src/stackframe_massacre.c
+  - bin/stackframe_massacre
+
+hints:
+  - man gets
+  - Have you tried running checksec on the binary?

@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+  nulldev:
+    build: .
+    ports:
+      - 22001:22001

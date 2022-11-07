@@ -1,0 +1,33 @@
+FILENAME=usb-backup
+
+.PHONY: all
+all: out/$(FILENAME).zip
+
+build/flag.png: src/flag.txt
+	convert -background white -fill black -font "FreeMono" -pointsize 80 "label:$$( cat src/flag.txt )" -strip build/flag.png
+
+build:
+	mkdir -p build
+
+out:
+	mkdir -p out
+
+.PHONY: build-image
+build-image: Dockerfile
+	sudo docker build -t shred -f ./Dockerfile-build .
+
+build/$(FILENAME).img: src/build.sh build/flag.png src/dummy-files/*
+	FILENAME=build/$(FILENAME).img PARTITION=no FLAG_FILE_PATH=build/flag.png DUMMY_FILES_PATH=src/dummy-files ./src/build.sh
+
+out/$(FILENAME).img: build/$(FILENAME).img
+	cp build/$(FILENAME).img out/usb-backup.img
+
+out/$(FILENAME).zip: out/usb-backup.img
+	rm -f out/$(FILENAME).zip
+	zip -9 -j out/$(FILENAME).zip out/usb-backup.img
+
+.PHONY: clean
+clean:
+	rm -rf build/*
+	rm -rf out/*
+
